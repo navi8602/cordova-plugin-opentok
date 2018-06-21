@@ -88,7 +88,7 @@
     [_publisher setPublishVideo:bpubVideo];
     [self.webView.superview addSubview:_publisher.view];
     [_publisher.view setFrame:CGRectMake(left, top, width, height)];
-    if (zIndex>0) {
+    if (zIndex==0) {
         _publisher.view.layer.zPosition = zIndex;
     }
     NSString* cameraPosition = [command.arguments objectAtIndex:8];
